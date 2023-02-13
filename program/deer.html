@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formalcal">
+        Num1: <input type="text" name="txtnum1">
+        <br>
+        Num2: <input type="text" name="txtnum2">
+        <br>
+        Num3: <input type="text" name="txtnum3">
+        <br>
+        Num4: <input type="text" name="txtnum4">
+        <br>
+        Num5: <input type="text" name="txtnum5">
+        <br>
+        Num6: <input type="text" name="txtnum6">
+        <br>
+        Result: <input type="text" name="txtresponse">
+        <br>
+        <input type="button" value="calculate" onClick="sumsOf">
+    </form>
+    <script type="text/javascript">
+        function sumsOf(){
+            var num1, num2, num3, num4, num5, num6, answer;
+            num1 = Number(document.formalcal.txtnum1.value);
+            num2 = Number(document.formalcal.txtnum2.value);
+            num3 = Number(document.formalcal.txtnum3.value);
+            num4 = Number(document.formalcal.txtnum4.value);
+            num5 = Number(document.formalcal.txtnum5.value);
+            num6 = Number(document.formalcal.txtnum6.value);
+            answer = num1 + num2 + num3 + num4 + num5 + num6;
+            document.formalcal.txtresponse.value=answer;
+        }
+    </script>
+</body>
+
+</html>
